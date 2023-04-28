@@ -37,7 +37,7 @@ const AddPost = () => {
       formData.append('userName', cookie.user.userName);
       formData.append('body', body);
       formData.append('featureImage', featureImage);
-      fetch('/api/addPost', {
+      fetch('/api/add/post', {
         method: 'POST',
         body: formData
       }).then(res => res.json()).then(data => {
